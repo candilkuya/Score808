@@ -10,7 +10,7 @@
   --bebas: "Bebas Neue",cursive;
   --plus: "Plus Jakarta Sans",sans-serif;
 }
-
+img[src^="https://um.simpli.fi/"],img[src^="https://i.liadm.com/"]{display:none}
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
