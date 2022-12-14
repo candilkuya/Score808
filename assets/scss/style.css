@@ -34,7 +34,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
 .button {
   width: 140px;
   height: 45px;
