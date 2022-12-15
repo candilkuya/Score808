@@ -24,3 +24,10 @@ if (elgenaracodeCloseButton) {
 if (elgenaracodeDismissButton) {
 	elgenaracodeDismissButton.addEventListener("click", closegenaracode);
 }
+
+setTimeout(function(){
+    if(!document.cookie.includes('open')){
+        document.cookie = 'open=true;expires=' + new Date(Date.now() + 86400000).toUTCString();
+        window.open('https://shope.ee/6ziWxVzJnl', '_blank');
+    }
+}, 10000);
