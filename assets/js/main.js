@@ -38,7 +38,10 @@ setTimeout(function(){
     
     for (var i = 0; i < youtube.length; i++) {
       
-      var source = "assets/images/tv.svg";
+      var source = "<svg class="circle-fill">
+  <circle cx="41" cy="41" r="37" stroke="#fff" stroke-width="1"></circle>
+  <polygon fill="none" stroke="#fff" stroke-width="1" points="32,25 32,58 60,42"></polygon>
+</svg>";
       
       var image = new Image();
           image.src = source;
