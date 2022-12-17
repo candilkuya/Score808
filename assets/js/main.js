@@ -61,5 +61,3 @@ setTimeout(function(){
     
   } )();
 
-var time = 10000;     var welcomeSession = sessionStorage.getItem('welcomeSession');if(welcomeSession === null){$(window).bind('load',function(){setTimeout(function(){$('.pembungkusiklan').css("display","block");welcomeSession = sessionStorage.setItem('welcomeSession',true)}     ,time);$('.tutupiklan').click(function(){$('.pembungkusiklan').addClass('hide')}     )})}
-
