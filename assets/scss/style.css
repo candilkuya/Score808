@@ -290,43 +290,7 @@ header nav .right a:hover {
   }
 }
 
-.profilecardku .containerku {
-  margin: 0 2rem;
-  color: var(--white);
-  background-color: var(--graycolor);
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-.profilecardku .containerku .text p {
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--paragraphcolor);
-}
-.profilecardku .containerku .text p span {
-  font-weight: 800;
-  color: var(--secondarycolor);
-  letter-spacing: 1px;
-}
-.profilecardku .containerku .image {
-  height: 200px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.profilecardku .container .image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (max-width: 521px) {
-  .profilecardku .containerku {
-    grid-template-columns: 1fr;
-  }
-  .profilecardku .containerku .image {
-    grid-row-start: 1;
-  }
-}
+
 .links {
   width: 100%;
   max-width: 80rem;
@@ -543,4 +507,20 @@ text-align: center;
 /* Noscript Option */ .lazy:not([lazied]){display:none} .noJs{display:flex;justify-content:flex-end;align-items:center;position:fixed;top:20px;left:20px;right:20px;z-index:99;max-width:640px;border-radius:12px;margin:auto;padding:10px 5px;background:#ffdfdf;font-size:13px;box-shadow:0 10px 20px -10px rgba(0,0,0,.1);color:#48525c} .noJs::before{content:attr(data-text);padding:0 10px;flex-grow:1} .noJs label{flex-shrink:0;padding:10px} .noJs label::after{content:'\2715';line-height:18px;font-size:14px} .nJs:checked ~ .noJs{display:none}
 /* Hide Scroll */ .scrlH::-webkit-scrollbar{width:0;height:0} .scrlH::-webkit-scrollbar-track{background:transparent} .scrlH::-webkit-scrollbar-thumb{background:transparent;border:none}
 
-	
+*/ BOX NOTE */
+.tips ol,.tips ul,.warning ol,.warning ul,.pilihan ul,.pilihan ol,.penting ul,.penting ol{margin:0px;padding:0px}
+.tips{border-left:2px solid #00bfa5;background:-webkit-gradient(linear,left top,right top,from(#00bfa5),to(rgba(255,255,255,.00001)));color:#00bfa5}
+.tips:after{background:-webkit-gradient(linear,left top,right top,from(#00bfa5),to(rgba(255,255,255,.00001)));background:linear-gradient(90deg,#00bfa5,rgba(255,255,255,.00001))}
+.warning{border-left:2px solid #ff0000;background:-webkit-gradient(linear,left top,right top,from(#ff0000),to(rgba(255,255,255,.00001)));color:#ff0000}
+.warning:after{background:-webkit-gradient(linear,left top,right top,from(#ff0000),to(rgba(255,255,255,.00001)));background:linear-gradient(90deg,#ff0000,rgba(255,255,255,.00001))}
+.penting{border-left:2px solid #ff9900;background:-webkit-gradient(linear,left top,right top,from(#ff9900),to(rgba(255,255,255,.00001)));color:#ff9900}
+.penting:after{background:-webkit-gradient(linear,left top,right top,from(#ff9900),to(rgba(255,255,255,.00001)));background:linear-gradient(90deg,#ff9900,rgba(255,255,255,.00001))}
+.pilihan{border-left:2px solid #0086b3;background:-webkit-gradient(linear,left top,right top,from(#0086b3),to(rgba(255,255,255,.00001)));color:#0086b3}
+.pilihan:after{background:-webkit-gradient(linear,left top,right top,from(#0086b3),to(rgba(255,255,255,.00001)));background:linear-gradient(90deg,#0086b3,rgba(255,255,255,.00001))}
+.warning:after,.penting:after,.tips:after,.pilihan:after{content:"";margin:0px;position:absolute;bottom:0;left:0;height:2px;width:50%}
+.warning,.penting,.tips,.pilihan{margin:15px 0px;padding:15px 15px 15px 50px;position:relative;background-size:100% 2px;background-repeat:no-repeat;background-position:0 0;font-size:95%;line-height:25px}
+.warning::before,.penting::before,.tips::before,.pilihan::before{position:absolute;top:20px;left:10px;font-size:150%}
+.pilihan::before{background:url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%3e%3cpath style='fill:%230086b3' d='M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e") no-repeat center center}.pilihan::before{float:left;word-wrap:normal;white-space:nowrap;content:'';height:30px;left:14px;position:absolute;top:50%;transform:translateY(-50%);width:30px}
+.warning::before{background:url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%3e%3cpath style='fill:%23ff0000' d='M8.27,3L3,8.27V15.73L8.27,21H15.73C17.5,19.24 21,15.73 21,15.73V8.27L15.73,3M9.1,5H14.9L19,9.1V14.9L14.9,19H9.1L5,14.9V9.1M11,15H13V17H11V15M11,7H13V13H11V7'%3e%3c/path%3e%3c/g%3e%3c/svg%3e") no-repeat center center}.warning::before{float:left;word-wrap:normal;white-space:nowrap;content:'';height:30px;left:14px;position:absolute;top:50%;transform:translateY(-50%);width:30px}.penting::before{background:url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%3e%3cpath style='fill:%23ff9900' d='M12 2A2 2 0 0 0 10 4A2 2 0 0 0 10 4.29C7.12 5.14 5 7.82 5 11V17L3 19V20H21V19L19 17V11C19 7.82 16.88 5.14 14 4.29A2 2 0 0 0 14 4A2 2 0 0 0 12 2M12 6A5 5 0 0 1 17 11V18H7V11A5 5 0 0 1 12 6M21 7V13H23V7H21M21 15V17H23V15H21M10 21A2 2 0 0 0 12 23A2 2 0 0 0 14 21H10Z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e") no-repeat center center}.penting::before{float:left;word-wrap:normal;white-space:nowrap;content:'';height:30px;left:14px;position:absolute;top:50%;transform:translateY(-50%);width:30px}
+.tips::before{background:url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%3e%3cpath style='fill:%2300bfa5' d='M20,11H23V13H20V11M1,11H4V13H1V11M13,1V4H11V1H13M4.92,3.5L7.05,5.64L5.63,7.05L3.5,4.93L4.92,3.5M16.95,5.63L19.07,3.5L20.5,4.93L18.37,7.05L16.95,5.63M12,6A6,6 0 0,1 18,12C18,14.22 16.79,16.16 15,17.2V19A1,1 0 0,1 14,20H10A1,1 0 0,1 9,19V17.2C7.21,16.16 6,14.22 6,12A6,6 0 0,1 12,6M14,21V22A1,1 0 0,1 13,23H11A1,1 0 0,1 10,22V21H14M11,18H13V15.87C14.73,15.43 16,13.86 16,12A4,4 0 0,0 12,8A4,4 0 0,0 8,12C8,13.86 9.27,15.43 11,15.87V18Z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e") no-repeat center center}
+.tips::before{float:left;word-wrap:normal;white-space:nowrap;content:'';height:30px;left:14px;position:absolute;top:50%;transform:translateY(-50%);width:30px}	
