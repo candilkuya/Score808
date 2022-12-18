@@ -505,24 +505,5 @@ text-align: center;
 /* Keyframes Animation */ @keyframes shimmer{100%{transform:translateX(100%)}} @keyframes fadein{50%{opacity:1}80%{opacity:1;padding-top:5px;height:22px}100%{opacity:0;padding-top:0;height:0}} @keyframes nudge{0%{transform:translateX(0)}30%{transform:translateX(-5px)}50%{transform:translateX(5px)}70%{transform:translateX(-2px)}100%{transform:translateX(0)}} @keyframes tonext{ 75%{left:0} 95%{left:100%} 98%{left:100%} 99%{left:0}} @keyframes tostart{ 75%{left:0} 95%{left:-300%} 98%{left:-300%} 99%{left:0}} @keyframes tonext-rev{ 75%{right:0} 95%{right:100%} 98%{right:100%} 99%{right:0}} @keyframes tostart-rev{ 75%{right:0} 95%{right:-300%} 98%{right:-300%} 99%{right:0}} @keyframes snap{ 96%{scroll-snap-align:center} 97%{scroll-snap-align:none} 99%{scroll-snap-align:none} 100%{scroll-snap-align:center}} @-webkit-keyframes fadein{50%{opacity:1}80%{opacity:1;padding-top:5px;height:22px}100%{opacity:0;padding-top:0;height:0}} @-webkit-keyframes nudge{0%{transform:translateX(0)}30%{transform:translateX(-5px)}50%{transform:translateX(5px)}70%{transform:translateX(-2px)}100%{transform:translateX(0)}} @-webkit-keyframes tonext{ 75%{left:0} 95%{left:100%} 98%{left:100%} 99%{left:0}} @-webkit-keyframes tostart{ 75%{left:0} 95%{left:-300%} 98%{left:-300%} 99%{left:0}} @-webkit-keyframes tonext-rev{ 75%{right:0} 95%{right:100%} 98%{right:100%} 99%{right:0}} @-webkit-keyframes tostart-rev{ 75%{right:0} 95%{right:-300%} 98%{right:-300%} 99%{right:0}} @-webkit-keyframes snap{ 96%{scroll-snap-align:center} 97%{scroll-snap-align:none} 99%{scroll-snap-align:none} 100%{scroll-snap-align:center}}
 /* Noscript Option */ .lazy:not([lazied]){display:none} .noJs{display:flex;justify-content:flex-end;align-items:center;position:fixed;top:20px;left:20px;right:20px;z-index:99;max-width:640px;border-radius:12px;margin:auto;padding:10px 5px;background:#ffdfdf;font-size:13px;box-shadow:0 10px 20px -10px rgba(0,0,0,.1);color:#48525c} .noJs::before{content:attr(data-text);padding:0 10px;flex-grow:1} .noJs label{flex-shrink:0;padding:10px} .noJs label::after{content:'\2715';line-height:18px;font-size:14px} .nJs:checked ~ .noJs{display:none}
 /* Hide Scroll */ .scrlH::-webkit-scrollbar{width:0;height:0} .scrlH::-webkit-scrollbar-track{background:transparent} .scrlH::-webkit-scrollbar-thumb{background:transparent;border:none}
-.note {
-  position: relative;
-  width: 40%;
-  padding: 1.2em 1.5em;
-  margin: 2em auto;
-  background: #2ecc71;
-  overflow: hidden;
-background-color: var(--graycolor);
-    color: var(--white);
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: row;
-    -moz-column-gap: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 350ms ease-out;
-    border-radius: 10px;
-    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;	
-}
+
+	
