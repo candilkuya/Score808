@@ -290,7 +290,7 @@ header nav .right a:hover {
   }
 }
 
-.profilecardku .container {
+.profilecardku .containerku {
   margin: 0 2rem;
   color: var(--white);
   background-color: var(--graycolor);
@@ -298,17 +298,17 @@ header nav .right a:hover {
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.profilecardku .container .text p {
+.profilecardku .containerku .text p {
   font-size: 2rem;
   font-weight: 400;
   color: var(--paragraphcolor);
 }
-.profilecardku .container .text p span {
+.profilecardku .containerku .text p span {
   font-weight: 800;
   color: var(--secondarycolor);
   letter-spacing: 1px;
 }
-.profilecardku .container .image {
+.profilecardku .containerku .image {
   height: 200px;
   overflow: hidden;
   border-radius: 10px;
@@ -320,10 +320,10 @@ header nav .right a:hover {
      object-fit: cover;
 }
 @media (max-width: 521px) {
-  .profilecardku .container {
+  .profilecardku .containerku {
     grid-template-columns: 1fr;
   }
-  .profilecardku .container .image {
+  .profilecardku .containerku .image {
     grid-row-start: 1;
   }
 }
