@@ -21,7 +21,108 @@
     <link rel="stylesheet" href="assets/scss/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
+  <style>
+  /** CSS IFRAME BY GEOSTREAM **/
+body {
+    background: #f4f4f4;
+}
+.iframe-container{
+	background: #e3e3e3;
+  	padding: 8px;
+  	border-radius: 5px;
+}
+.info-container{
+	background: #e3e3e3;
+  	padding: 10px;
+  	border-radius: 5px;
+}
+.btn-container{
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.btn-switch {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 5px 18px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  height: auto;
+}
 
+.btn-switch:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.btn-switch:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.btn-switch:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.iframe-play {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    color: #0068ff;
+    border-radius: 50%;
+    margin: -30px 0 0 -30px;
+}
+.content-iframe {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/img/loading2.gif") center center / cover no-repeat;
+}
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+}
+</style>
 </head>
 
 <body>
@@ -62,26 +163,33 @@
                 </div>
             </div>
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4698899&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  -->
+<!-- Histats.com  END 
 		<div class='wrapper'>
    <div class='youtube' data-embed='kategori.html'>
-      <!--<div class='play-button'/>-->
-    </div>
-			   			<div class="neumorphism">
-<p>Bila Belum Bisa Refresh Dulu, Tunggu Beberapa Detik Sampai Terhubung ke Server, Lalu Play.<br/>
+    </div> -->
+	           <div class="content-iframe" id="myIframe">
+                <img class="responsive-iframe" src="/img/loading1.jpg" />
+                <a class="iframe-play" style="text-decoration: none;" href="javascript:void(0)" onclick="switchq('https://www.score808.eu.org/p/kategori.html'); "><i class="las la-play" style="font-size: 30px; padding-left: 2px; padding-top: 2px;"></i></a>  
+            </div>
+			<div class="neumorphism">
+<p style="font-size: 15px;">Bila Belum Bisa Refresh Dulu, Tunggu Beberapa Detik Sampai Terhubung ke Server, Lalu Play.<br/>
 				  Saran Gunakan Browser Google Chrome.
 Bila Ada Pertanyaan Bisa Kunjungi Halaman : <a href="https://www.facebook.com/score808indonesia" rel="noopener">Score808 Indonesia</a>.</p>  <div class="moreBtn">
   </div>  
 </div>
-     	   
+     	  <button class="tomboltv" onclick="switchq('https://candilkuya.github.io/Score808/')"><i class="fa-solid fa-play"></i> Refresh</button>
+            <button class="tomboltv" onclick="switchq('https://www.score808.eu.org/p/server-2.html')"><i class="fa-solid fa-play"></i> Server2</button>
+            <button class="tomboltv" onclick="switchq('https://shope.ee/6KVC1SowEb')"><i class="fa-solid fa-play"></i> Server 3</button>
+            <button><a class="tomboltv" href="https://www.score808.eu.org/p/link-streaming.html" style="background: silver; color: black;">Link Alternative</a></button>
+
 		<br/>
 		 <center><div id="histats_counter"></div><hr>
-<button><a class="tomboltv" href="https://candilkuya.github.io/Score808/" style="background: green; color: white; cursor: pointer;">Refresh</a></button>
+<!--<button><a class="tomboltv" href="https://candilkuya.github.io/Score808/" style="background: green; color: white; cursor: pointer;">Refresh</a></button>
 <button><a class="tomboltv" href="https://shope.ee/6KVC1SowEb" target="_blank" style="background: green; color: white; cursor: pointer;">SERVER 1</a></button>
 <button><a class="tomboltv" href="https://www.score808.eu.org/p/live-streaming.html" target="_blank" style="background: green; color: white; cursor: pointer;">SERVER 2</a></button>
 			 
 <button><a class="tomboltv" href="https://www.score808.eu.org/p/link-streaming.html" style="background: silver; color: black;">Link Alternative</a></button>
-                     <br>
+                     <br>-->
 			  
 			 
 			 <hr><br/>
@@ -303,6 +411,11 @@ Bila Ada Pertanyaan Bisa Kunjungi Halaman : <a href="https://www.facebook.com/sc
 function downloadJSAtOnload(){var d=document.createElement("script");d.src="https://cdn.statically.io/gh/candilkuya/Score808/main/hitstat.js",document.body.appendChild(d)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
 //]]>
 </script>
+<script type='text/javascript'>
+function switchq(src){
+    document.getElementById("myIframe").innerHTML = '<iframe class="responsive-iframe" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; autoplay" allowfullscreen="" frameborder="0"	height="380" src="'+ src +'" width="100%"></iframe>';
+}
+</script>	
 </body>
 
 </html>
