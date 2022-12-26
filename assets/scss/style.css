@@ -472,7 +472,7 @@ border-radius: .5em;
 color: #ff0000;
 display: inline-block;
 font: bold 11px Arial, sans-serif;
-margin: 1px;
+margin: 2px;
 min-width: 80px;
 padding: 4px 3px;
 text-align: center;
@@ -629,7 +629,7 @@ display: none
 }
 /* My Project */
 #tivi {background-color: #000000;border: 3px solid #000000;border-radius: 3px;box-shadow: 0 10px 10px -10px #000000;height: 0;overflow: hidden;padding-bottom: 60%;padding-top: 5%;position: relative;} #tivi iframe, #tivi embed, #tivi object, #tivi video {border: 0 none;height: 100%;left: 0;position: absolute;top: 0;width: 100%;}
-.tomboltv{background: #fff;border: 1px solid #eee;border-radius:10px;color: #f00;display: inline-block;font: bold 11px Arial,sans-serif;margin: 0px;min-width: 70px;padding: 5px 1px;text-align: center;text-decoration: none;box-shadow: 0 4px 4px -2px #000}
+.tomboltv{background: #fff;border: 1px solid #eee;border-radius:10px;color: #f00;display: inline-block;font: bold 11px Arial,sans-serif;margin: 2px;min-width: 70px;padding: 5px 2px;text-align: center;text-decoration: none;box-shadow: 0 4px 4px -2px #000}
 .live-match {
 border: 1px solid #000000;
 overflow: hidden;
