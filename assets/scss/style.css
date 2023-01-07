@@ -490,7 +490,7 @@ display: none
   position: fixed;
   right: 20px;
   bottom: 20px;
-  z-index: 0;
+  z-index: 9999;
 }
 
 #main-button {
